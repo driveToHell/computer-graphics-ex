@@ -2,7 +2,7 @@
 // Created by Zacks on 2017/4/24.
 //
 
-#define _NOT_MAIN_
+//#define _NOT_MAIN_
 
 #ifndef _NOT_MAIN_
 
@@ -24,7 +24,7 @@ int main () {
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE);
     
-    auto window = glfwCreateWindow(winWidth, winHeight, "Title", nullptr, nullptr);
+    auto window = glfwCreateWindow(winWidth, winHeight, "Shader", nullptr, nullptr);
     glfwMakeContextCurrent(window);
     glfwSetErrorCallback(error_callback);
     

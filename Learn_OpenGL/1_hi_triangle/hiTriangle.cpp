@@ -45,7 +45,7 @@ int main () {
     glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // macOS
     
-    GLFWwindow *window = glfwCreateWindow(width, height, "Title", NULL, NULL); // 创造窗口
+    GLFWwindow *window = glfwCreateWindow(width, height, "Hi Triangle", NULL, NULL); // 创造窗口
     if (!window) { throw std::runtime_error("create window failed"); }
     glfwMakeContextCurrent(window); // 设置上下文
     glfwSetErrorCallback(error_callback); // 设置错误回调函数

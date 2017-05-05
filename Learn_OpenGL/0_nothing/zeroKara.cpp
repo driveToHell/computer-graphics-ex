@@ -2,6 +2,8 @@
 // Created by Zacks on 2017/4/22.
 // Change Color
 //
+#define NOT_MAIN
+#ifndef NOT_MAIN
 #include <GLFW/glfw3.h>
 #include <fstream>
 
@@ -51,7 +53,7 @@ int main()
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // macOS
     
     glfwSetErrorCallback(error_callback);
-    auto window = glfwCreateWindow(width, height, "Title", NULL, NULL);
+    auto window = glfwCreateWindow(width, height, "Zero Kara", NULL, NULL);
     if (!window) {throw std::runtime_error("create window failed");}// window is created correctly
     glfwMakeContextCurrent(window);
     glfwSetKeyCallback(window, key_callback);
@@ -70,3 +72,4 @@ int main()
     glfwTerminate();
     return 0;
 }
+#endif

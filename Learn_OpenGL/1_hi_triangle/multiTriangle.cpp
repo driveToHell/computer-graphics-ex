@@ -44,7 +44,7 @@ int main () {
     glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
     
     glfwSetErrorCallback(error_callback);
-    auto window = glfwCreateWindow(width, height, "ex_triangle", nullptr, nullptr);
+    auto window = glfwCreateWindow(width, height, "Multi Triangle", nullptr, nullptr);
     glfwMakeContextCurrent(window);
     
     glewExperimental = GL_TRUE;
